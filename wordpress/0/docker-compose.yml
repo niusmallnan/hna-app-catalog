@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  wordpress:
+    images: wordpress
+    labels:
+      io.rancher.glb: 'true'
+  mysql:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+  lb:
+    image: rancher/none
+    labels:
+      io.rancher.glb: 'true'
+      io.rancher.container.agent.role: environmentAdmin
+      io.rancher.glb.http: 'true'
+      io.rancher.container.create_agent: 'true'
