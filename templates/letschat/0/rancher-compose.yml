@@ -6,10 +6,10 @@
   questions:
   - variable: "fqdn"
     label: "LB FQDN"
-    description: "Just like xxx.<environment_id>.cnrancher.cn"
+    description: "Just like xxx.<project_id>.cnrancher.cn"
     type: "string"
     required: true
-    default: "letschat.$${project_id}.cnrancher.cn"
+    default: "letschat.%{{project_id}}.cnrancher.cn"
   - variable: "lb_source_port"
     label: "LB Source Port"
     description: "Source port for GLB"
