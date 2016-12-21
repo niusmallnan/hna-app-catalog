@@ -9,7 +9,7 @@
     description: "Just like xxx.<project_id>.cnrancher.cn"
     type: "string"
     required: true
-    default: "letschat.%{{project_id}}.cnrancher.cn"
+    default: "wordpress.%{{project_id}}.cnrancher.cn"
   - variable: "lb_source_port"
     label: "LB Source Port"
     description: "Source port for GLB"
