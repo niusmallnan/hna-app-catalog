@@ -27,7 +27,7 @@ lb:
       - hostname: ${fqdn}
         priority: 1
         protocol: http
-        service: letschat
+        service: wordpress
         source_port: ${lb_source_port}
         target_port: 80
     health_check:
