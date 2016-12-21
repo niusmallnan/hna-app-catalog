@@ -11,7 +11,7 @@ services:
     image: mariadb
     environment:
       MYSQL_ROOT_PASSWORD: example
-  lb:
+  wordpress-lb:
     image: rancher/none
     labels:
       io.rancher.glb: 'true'

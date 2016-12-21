@@ -6,10 +6,10 @@
   questions:
   - variable: "fqdn"
     label: "LB FQDN"
-    description: "Just like xxx.<project_id>.cnrancher.cn"
+    description: "App name for FQDN"
     type: "string"
     required: true
-    default: "wordpress.%{{project_id}}.cnrancher.cn"
+    default: "wordpress"
   - variable: "lb_source_port"
     label: "LB Source Port"
     description: "Source port for GLB"
@@ -18,7 +18,7 @@
     default: "8082"
 
 
-lb:
+wordpress-lb:
     scale: 1
     start_on_create: true
     lb_config:
