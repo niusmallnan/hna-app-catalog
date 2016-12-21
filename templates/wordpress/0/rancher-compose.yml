@@ -9,7 +9,7 @@
     description: "Just like xxx.<environment_id>.cnrancher.cn"
     type: "string"
     required: true
-    default: "letschat.%{{environment_name}}.cnrancher.cn"
+    default: "letschat.$${environment_name}.cnrancher.cn"
   - variable: "lb_source_port"
     label: "LB Source Port"
     description: "Source port for GLB"
